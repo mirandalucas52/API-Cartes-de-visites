@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Générateur de Carte de Visite</title>
+    </head>
+    <body>
+        <div class="history">
+            <h2>Historique des Cartes de Visite</h2>
+            <ul id="historyList"></ul>
+        </div>
+        <div class="global">
+            <div class="title">
+                <h1>GENERATEUR DE CARTE DE VISITE</h1>
+            </div>
+            <form id="cardForm">
+                <label for="entreprise">Entreprise</label>
+                <input
+                    type="text"
+                    id="entreprise"
+                    name="entreprise"
+                    required
+                /><br />
+                <label for="nom">Nom / Prénom</label>
+                <input type="text" id="nom" name="nom" required /><br />
+
+                <label for="profession">Profession</label>
+                <input
+                    type="text"
+                    id="profession"
+                    name="profession"
+                    required
+                /><br />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required /><br />
+
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" required /><br />
+            </form>
+            <div class="button">
+                <button type="button" onclick="generateCard()">Générer</button>
+                <div id="result"></div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
