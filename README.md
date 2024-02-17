@@ -2,17 +2,17 @@
 
 Tout d'abord, modifiez le fichier app.js pour permettre la connexion à votre MySQL :
 
-#### const db = mysql.createConnection({
+##### const db = mysql.createConnection({
 
-#### host: "localhost",
+##### host: "localhost",
 
-#### user: "Votre_nom_d_utilisateur",
+##### user: "Votre_nom_d_utilisateur",
 
-#### assword: "Votre_mot_de_passe",
+##### password: "Votre_mot_de_passe",
 
-#### database: "visitcards",
+##### database: "visitcards",
 
-#### });
+##### });
 
 Vous devez avoir installé MySQL sur votre ordinateur
 
