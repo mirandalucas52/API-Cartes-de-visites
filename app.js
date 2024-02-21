@@ -11,8 +11,8 @@ app.use("/cards", express.static(path.join(__dirname, "cards")));
 
 const db = mysql.createConnection({
     host: "localhost",
-    user: "Votre_nom_d_utilisateur",
-    password: "Votre_mot_de_passe",
+    user: "mirandalucas52@gmail.com",
+    password: "cx7eKQcy",
     database: "visitcards",
 });
 

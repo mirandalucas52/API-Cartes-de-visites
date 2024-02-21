@@ -1,4 +1,4 @@
-window.generateCard = function () {
+function generateCard() {
     const nom = document.getElementById("nom").value;
     const entreprise = document.getElementById("entreprise").value;
     const profession = document.getElementById("profession").value;
@@ -34,7 +34,7 @@ window.generateCard = function () {
                 "Erreur lors de la génération de la carte.";
         });
     loadHistory();
-};
+}
 
 function loadHistory() {
     axios
