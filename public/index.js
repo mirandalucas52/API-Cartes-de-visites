@@ -6,7 +6,7 @@ function generateCard() {
     const phone = document.getElementById("phone").value;
 
     if (!nom || !entreprise || !profession || !email || !phone) {
-        document.getElementById("result").style.color = "#red";
+        document.getElementById("result").style.color = "#orange";
         document.getElementById("result").innerHTML =
             "Veuillez remplir tous les champs.";
         return;
